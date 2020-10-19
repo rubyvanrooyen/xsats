@@ -1,0 +1,10 @@
+#! /bin/bash
+export MALLOC_CHECK_=0
+./sort_SWIFT.exe > SWIFT_today
+source runSWIFT
+export MALLOC_CHECK_=0
+./sort_RXTE.exe  > RXTE_today
+source runRXTE
+export MALLOC_CHECK_=0
+./sort_Chan_XMM_Suz_Int.exe  > Chan_XMM_Suz_Int_today
+source runChan_XMM_Suz_Int

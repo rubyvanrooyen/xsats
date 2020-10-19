@@ -1,0 +1,12 @@
+#! /bin/bash
+/usr/local/bin/idl << $
+n
+set_plot,'ps
+.r pltChan_XMM_Suz_Int
+$
+mv idl.ps Chan_XMM_suz_Int.ps << $
+y
+$
+convert Chan_XMM_suz_Int.ps Chan_XMM_suz_Int_today.jpg
+:
+:

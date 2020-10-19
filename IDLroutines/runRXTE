@@ -1,0 +1,12 @@
+#! /bin/bash
+/usr/local/bin/idl << $
+n
+set_plot,'ps
+.r pltRXTE
+$
+mv idl.ps RXTE.ps << $
+y
+$
+convert RXTE.ps RXTEtoday.jpg
+:
+:

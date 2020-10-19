@@ -1,0 +1,12 @@
+#! /bin/bash
+/usr/local/bin/idl << $
+n
+set_plot,'ps
+.r pltSWIFT
+$
+mv idl.ps SWIFT.ps << $
+y
+$
+convert SWIFT.ps SWIFTtoday.jpg
+:
+:
